@@ -35,10 +35,21 @@
 	/* ===================================================== */
 
 	/* === Carrega um usuario usando o login e a senha === */
-	$usuario = new Usuario();
+
+	/* $usuario = new Usuario();
 	$usuario->login("Fernanda Piassa", "a1b2c3d4");
 
-	echo $usuario;
+	echo $usuario; */
+
+	/* ====================================================== */
+
+	/* === INSERT === */
+
+	$aluno = new Usuario("aluno", "@lun0");
+
+	$aluno->insert();
+
+	echo $aluno;
 
 
  ?>
