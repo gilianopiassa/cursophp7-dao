@@ -43,13 +43,24 @@
 
 	/* ====================================================== */
 
-	/* === INSERT === */
+	/* === INSERT criando um novo usuario === */
 
-	$aluno = new Usuario("aluno", "@lun0");
+	/*$aluno = new Usuario("aluno", "@lun0");
 
 	$aluno->insert();
 
-	echo $aluno;
+	echo $aluno; */
 
+   /* ======================================================= */
+
+   /* === Update atualizando um novo usuario === */
+
+   $usuario = new Usuario();
+
+   $usuario->loadById(5);
+
+   $usuario->update("professor", "pr0f3ss0r");
+
+   echo $usuario;
 
  ?>
