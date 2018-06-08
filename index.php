@@ -55,11 +55,23 @@
 
    /* === Update atualizando um novo usuario === */
 
-   $usuario = new Usuario();
+   /* $usuario = new Usuario();
 
    $usuario->loadById(5);
 
    $usuario->update("professor", "pr0f3ss0r");
+
+   echo $usuario; */
+
+   /* ======================================================== */
+
+   /* === Delete deletando um usuario === */
+
+   $usuario = new Usuario();
+
+   $usuario->loadById(5);
+
+   $usuario->delete();
 
    echo $usuario;
 
